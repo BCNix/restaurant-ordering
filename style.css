@@ -1,0 +1,178 @@
+body{
+    margin: 0;
+    font-family: "Smythe", system-ui;
+    background-color: whitesmoke;
+}
+
+
+
+/* Layout */
+
+header,
+main,
+footer{
+    margin: 0 auto;
+    width: 600px;
+}
+
+header{
+    height: 167px;
+    position: relative;
+}
+
+.header-content{
+    padding: 5px;
+    color: whitesmoke;
+    position: absolute;
+    top: 41px;
+    left: 41px;
+}
+
+section,
+.cmplt-btn{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.list-product{
+    padding-top: 67px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.list-product > li{
+    margin-bottom: 45px;
+}
+
+span{
+    font-size: 5rem;
+}
+
+.li-container{
+    display: flex;
+    justify-content: space-between;
+    height: 140px;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.inner-container{
+    display: flex;
+    align-items: start;
+    gap: 2rem;
+}
+
+.list-cart{
+    border-bottom: 2px solid #393333;
+    padding-bottom: 15px;
+}
+
+.cart-text{
+    display: flex;
+}
+
+.cart-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-content{
+    display: flex;
+    gap: 13px;
+}
+
+footer{
+    padding: 50px 0 25px 0;
+    text-align: center;
+}
+
+/* Image */
+
+/* Typography */
+
+h1{
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.header-content > p {
+    margin-top: 5px;
+    font-size: 1.5rem;
+}
+
+h2{
+    font-size: 1.75rem;
+    margin: 0;
+}
+
+.inner-text > p {
+    color: #8B8B8B;
+    margin: 8px 0;
+}
+
+.price {
+    font-size: 1.25rem;
+}
+
+.cart-header{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.header-total-price{
+    margin: 14px 0;
+}
+
+/* Button */
+
+button{
+    cursor: pointer;
+}
+
+.style-btn{
+    position: relative;
+    top: 0;
+    box-shadow: 0 3px 0 whitesmoke;
+    transition: all 0.1s ease;
+}
+
+.style-btn:active{
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    top: 3px;
+}
+
+.add-btn {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #DEDEDE;
+    border-radius: 50%;
+    font-size: 2rem;
+    background-color: whitesmoke;
+    color: #3C3C3C;
+}
+
+.remove-btn{
+    border: none;
+    padding: 0;
+    background-color: whitesmoke;
+    color: #BBBBBB;
+    font-size: 0.75rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cmplt-btn{
+    background-color: #16DB99;
+    color: whitesmoke;
+    border-radius: 3px;
+    border: 1px solid #16DB99;
+    padding: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 28px;
+}
