@@ -29,7 +29,8 @@ header{
 }
 
 section,
-.cmplt-btn{
+.cmplt-btn,
+.pay-btn{
     width: 500px;
     margin: 0 auto;
 }
@@ -165,7 +166,8 @@ button{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.cmplt-btn{
+.cmplt-btn,
+.pay-btn{
     background-color: #16DB99;
     color: whitesmoke;
     border-radius: 3px;
@@ -175,4 +177,66 @@ button{
     font-weight: bold;
     font-size: 1rem;
     margin-top: 28px;
+}
+
+
+/* Modal Section */
+main{
+    position: relative;
+}
+
+.modal-section{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 125px auto 0;
+    width: 520px;
+    height: fit-content;
+    text-align: center;
+    /* border: 1px solid #16DB99; */
+    border-radius: 4px;
+    box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.5);
+    background-color: #f5f5f5;
+    /* margin: 0 auto; */
+}
+
+.modal-section h2{
+    padding: 46px 100px;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.modal-section input[type="text"]{
+    padding-left: 26px;
+    margin: 0 auto 23px;
+    display: block;
+    width: 446px;
+    height: 64px;
+    font-size: 1.25rem;
+}
+
+.pay-btn{
+    margin-top: 22px;
+    margin-bottom: 29px;
+    width: 478px;
+}
+
+.hidden{
+    display: none;
+}
+
+.message{
+    background-color: #ECFDF5;
+    color: #065F46;
+    border-radius: 3px;
+    font-size: 2rem;
+    text-align: center;
+    padding: 50px;
+
+}
+
+.message p{
+    margin: 0;
 }
