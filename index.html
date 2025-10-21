@@ -20,68 +20,25 @@
         </div>
     </header>
 
-    <main>
-        <!-- List of products -->
+    <main id="main-el">
+        
         <section id="products">
-            <ul class="list-product">
-                <li class="li-container">
-                    <div class="inner-container">
-                        <span>🍕</span>
-                        <div class="inner-text">
-                            <h2>Pizza</h2>
-                            <p>pepperoni, mushrom, mozarella</p>
-                            <strong class="price">$14</strong>
-                        </div>
-                    </div>
-                    <button id="pizza" class="add-btn style-btn">&plus;</button>
-                </li>
-                <li class="li-container">
-                    <div class="inner-container">
-                        <span>🍔</span>
-                        <div class="inner-text">
-                            <h2>Hamburger</h2>
-                            <p>beef, cheese, lettuce</p>
-                            <strong class="price">$12</strong>
-                        </div>
-                    </div>
-                    <button id="hamburger" class="add-btn style-btn">&plus;</button>
-                </li>
-                <li class="li-container">
-                    <div class="inner-container">
-                        <span>🍺</span>
-                        <div class="inner-text">
-                            <h2>Beer</h2>
-                            <p>grain, hops, yeast, water</p>
-                            <strong class="price">$12</strong>
-                        </div>
-                    </div>
-                    <button id="beer" class="add-btn style-btn">&plus;</button>
-                </li>
+            <ul id="list-product" class="list-product">
+                <!-- List of products goes here! -->
             </ul>
         </section>
 
         <!-- Cart -->
         <section id="cart" class="hidden">
             <h2 class="cart-header">Your Order</h2>
-            <ul class="list-cart">
-                <li class="cart-inner">
-                    <div class="cart-content">
-                        <h2>Pizza</h2>
-                        <button class="remove-btn">remove</button>
-                    </div>
-                    <div id="" class="price">$14</div>
-                </li>
-                <li class="cart-inner">
-                    <div class="cart-content">
-                        <h2>Beer</h2>
-                        <button class="remove-btn">remove</button>
-                    </div>
-                    <div id="" class="price">$12</div>
-                </li>
+            <ul id="list-cart" class="list-cart">
+                <!-- Added products goes here! -->
             </ul>
             <div class="cart-inner">
                 <h2 class="header-total-price">Total price:</h2>
-                <div id="" class="price">$26</div>
+                <div id="total-price" class="price">
+                    <!-- Total Price -->
+                </div>
             </div>
             <button id="" class="cmplt-btn style-btn">Complete order</button>
         </section>
