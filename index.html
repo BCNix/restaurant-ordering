@@ -40,26 +40,25 @@
                     <!-- Total Price -->
                 </div>
             </div>
-            <button id="" class="cmplt-btn style-btn">Complete order</button>
+            <button id="cmplt-btn" class="cmplt-btn style-btn">Complete order</button>
         </section>
 
         <!-- Modal (Payment) -->
-        <section class="modal-section hidden">
+        <section id="modal" class="modal-section hidden">
             <h2>Enter card details</h2>
-            <form action="">
-                <input type="text" name="name" id="name" placeholder="Enter your name" aria-label="Enter your name" autocomplete="cc-name">
-                <input type="text" name="card" id="card" placeholder="Enter card number" aria-label="Enter card number" autocomplete="cc-number">
-                <input type="text" name="cvv" id="cvv" placeholder="Enter CVV" aria-label="Enter CVV" autocomplete="cc-csc">
-                <button id="" class="pay-btn style-btn">Pay</button>
+            <form action="" id="form">
+                <input type="text" name="name" id="name" placeholder="Enter your name" aria-label="Enter your name" autocomplete="cc-name" required>
+                <input type="text" name="card" id="card" placeholder="Enter card number" aria-label="Enter card number" autocomplete="cc-number" required>
+                <input type="text" name="cvv" id="cvv" placeholder="Enter CVV" aria-label="Enter CVV" autocomplete="cc-csc" required>
+                <button id="" class="pay-btn style-btn" type="submit">Pay</button>
             </form>
+            <button id="close-btn" class="close-modal-btn">ⓧ</button>
         </section>
         <!-- Thank you message -->
 
-        <section class="paid-order-message hidden">
+        <section id="message" class="paid-order-message hidden">
 
-            <div class="message">
-                <p>Thank, [name]! Your order is on its way!</p>
-            </div>
+            <!-- Thank you message goes here.... -->
 
         </section>
     </main>

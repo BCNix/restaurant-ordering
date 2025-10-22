@@ -208,6 +208,17 @@ main{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.close-modal-btn{
+    font-size: 25px;
+    position: absolute;
+    top: 4.5%;
+    right: 5%;
+    border: none;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    padding: 0;
+}
+
 .modal-section input[type="text"]{
     padding-left: 26px;
     margin: 0 auto 23px;
