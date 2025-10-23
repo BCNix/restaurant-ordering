@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <img src="./images/header.png" alt="A burger with lettuce, onion, egg, slice of cheese and burger patty.">
+        <img class="header-img" src="./images/header.png" alt="A burger with lettuce, onion, egg, slice of cheese and burger patty.">
         <div class="header-content">
             <h1>Saturn's Diner</h1>
             <p>The best diner place in town.</p>
@@ -29,7 +29,7 @@
         </section>
 
         <!-- Cart -->
-        <section id="cart" class="hidden">
+        <section id="cart" class="hidden cart">
             <h2 class="cart-header">Your Order</h2>
             <ul id="list-cart" class="list-cart">
                 <!-- Added products goes here! -->
@@ -46,7 +46,7 @@
         <!-- Modal (Payment) -->
         <section id="modal" class="modal-section hidden">
             <h2>Enter card details</h2>
-            <form action="" id="form">
+            <form action="" id="form" class="form">
                 <input type="text" name="name" id="name" placeholder="Enter your name" aria-label="Enter your name" autocomplete="cc-name" required>
                 <input type="text" name="card" id="card" placeholder="Enter card number" aria-label="Enter card number" autocomplete="cc-number" required>
                 <input type="text" name="cvv" id="cvv" placeholder="Enter CVV" aria-label="Enter CVV" autocomplete="cc-csc" required>

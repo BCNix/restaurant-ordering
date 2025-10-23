@@ -4,19 +4,17 @@ body{
     background-color: whitesmoke;
 }
 
-
-
 /* Layout */
 
 header,
 main,
 footer{
+    width: 100%;
     margin: 0 auto;
-    width: 600px;
+    max-width: 600px;
 }
 
 header{
-    height: 167px;
     position: relative;
 }
 
@@ -31,12 +29,12 @@ header{
 section,
 .cmplt-btn,
 .pay-btn{
-    width: 500px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
 .list-product{
-    padding-top: 67px;
+    padding: 67px 20px 0;
 }
 
 ul{
@@ -87,12 +85,21 @@ span{
     gap: 13px;
 }
 
+.cart{
+    padding: 20px;
+}
+
 footer{
     padding: 50px 0 25px 0;
     text-align: center;
 }
 
 /* Image */
+
+.header-img{
+    display: block;
+    width: 100%;
+}
 
 /* Typography */
 
@@ -177,6 +184,7 @@ button{
     font-weight: bold;
     font-size: 1rem;
     margin-top: 28px;
+    width: 100%;
 }
 
 
@@ -191,21 +199,24 @@ main{
     bottom: 0;
     right: 0;
     left: 0;
-    margin: 125px auto 0;
-    width: 520px;
+    margin: 125px 20px 0;
+    max-width: 520px;
     height: fit-content;
     text-align: center;
-    /* border: 1px solid #16DB99; */
     border-radius: 4px;
     box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.5);
     background-color: #f5f5f5;
-    /* margin: 0 auto; */
+    padding: 20px;
 }
 
 .modal-section h2{
     padding: 46px 100px;
     font-size: 1.5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form{
+    padding-top: 20px;
 }
 
 .close-modal-btn{
@@ -220,18 +231,19 @@ main{
 }
 
 .modal-section input[type="text"]{
+    box-sizing: border-box;
     padding-left: 26px;
-    margin: 0 auto 23px;
+    margin: 0 0 23px;
     display: block;
-    width: 446px;
     height: 64px;
     font-size: 1.25rem;
+    width: 100%;
 }
 
 .pay-btn{
     margin-top: 22px;
     margin-bottom: 29px;
-    width: 478px;
+    width: 100%;
 }
 
 .hidden{
@@ -250,4 +262,36 @@ main{
 
 .message p{
     margin: 0;
+}
+
+.paid-order-message{
+    padding: 0 20px;
+}
+
+
+@media (max-width: 500px){
+    .header-content{
+        top: 5px;
+        left: 20px;
+    }
+
+    .header-content > p{
+        margin-bottom: 10px;
+    }
+
+    .modal-section h2{
+        padding: 20px 30px 10px;
+        font-size: 1.4rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .message{
+        background-color: #ECFDF5;
+        color: #065F46;
+        border-radius: 3px;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 20px;
+
+    }
 }
